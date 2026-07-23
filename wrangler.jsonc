@@ -1,0 +1,9 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "jackl-portfolio",
+	"compatibility_date": "2026-07-23",
+	"compatibility_flags": [
+		"nodejs_als"
+	],
+	"pages_build_output_dir": ".svelte-kit/cloudflare"
+}
