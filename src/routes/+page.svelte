@@ -8,6 +8,14 @@
 	const education: { degree: string; school: string; period: string }[] = [];
 
 	const projects: { title: string; description: string; href: string }[] = [];
+
+	const github = 'https://github.com/JackLouAllen';
+	const linkedin = 'https://linkedin.com/in/JackLouAllen';
+	const email = 'Contact@JackLouAllen.info';
+	const socials = [
+		{ label: 'GitHub', href: github },
+		{ label: 'LinkedIn', href: linkedin }
+	];
 </script>
 
 <div id="top">
@@ -90,6 +98,11 @@
 					</div>
 				{/each}
 			</div>
+			<div class="mt-8">
+				<a href={github} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+					See more on GitHub
+				</a>
+			</div>
 		</div>
 	</section>
 
@@ -97,10 +110,30 @@
 		<div class="mx-auto max-w-5xl">
 			<h2 class="text-3xl font-bold">Contact</h2>
 			<p class="mt-4 text-base-content/80"></p>
+			<div class="mt-6 flex gap-3">
+				<a href={`mailto:${email}`} class="btn btn-outline btn-sm">
+					{email}
+				</a>
+				<a href={linkedin} target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+					LinkedIn
+				</a>
+			</div>
 		</div>
 	</section>
 
-	<footer class="footer footer-center p-6 text-base-content/60">
+	<footer class="footer footer-center gap-2 p-6 text-base-content/60">
+		<div class="flex gap-4">
+			{#each socials as social (social.href)}
+				<a
+					href={social.href}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="link link-hover"
+				>
+					{social.label}
+				</a>
+			{/each}
+		</div>
 		<p>&copy; {new Date().getFullYear()} JackLouAllen.info. All rights reserved.</p>
 	</footer>
 </div>
