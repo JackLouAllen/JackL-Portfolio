@@ -1,2 +1,60 @@
 @import 'tailwindcss';
-@plugin 'daisyui';
+@plugin 'daisyui' {
+	themes: false;
+}
+
+/* Catppuccin Latte (light) — https://github.com/catppuccin/catppuccin */
+@plugin 'daisyui/theme' {
+	name: 'latte';
+	default: true;
+	prefersdark: false;
+	color-scheme: light;
+	--color-primary: #7287fd;
+	--color-primary-content: #e6e9ef;
+	--color-secondary: #ccd0da;
+	--color-secondary-content: #4c4f69;
+	--color-accent: #dc8a78;
+	--color-accent-content: #e6e9ef;
+	--color-neutral: #8c8fa1;
+	--color-neutral-content: #e6e9ef;
+	--color-success: #40a02b;
+	--color-success-content: #eff1f5;
+	--color-warning: #df8e1d;
+	--color-warning-content: #eff1f5;
+	--color-error: #d20f39;
+	--color-error-content: #eff1f5;
+	--color-info: #04a5e5;
+	--color-info-content: #e6e9ef;
+	--color-base-100: #eff1f5;
+	--color-base-200: #e6e9ef;
+	--color-base-300: #dce0e8;
+	--color-base-content: #4c4f69;
+}
+
+/* Catppuccin Macchiato (dark) — https://github.com/catppuccin/catppuccin */
+@plugin 'daisyui/theme' {
+	name: 'macchiato';
+	default: false;
+	prefersdark: true;
+	color-scheme: dark;
+	--color-primary: #b7bdf8;
+	--color-primary-content: #1e2030;
+	--color-secondary: #363a4f;
+	--color-secondary-content: #cad3f5;
+	--color-accent: #f4dbd6;
+	--color-accent-content: #1e2030;
+	--color-neutral: #8087a2;
+	--color-neutral-content: #1e2030;
+	--color-success: #a6da95;
+	--color-success-content: #24273a;
+	--color-warning: #eed49f;
+	--color-warning-content: #24273a;
+	--color-error: #ed8796;
+	--color-error-content: #24273a;
+	--color-info: #91d7e3;
+	--color-info-content: #1e2030;
+	--color-base-100: #24273a;
+	--color-base-200: #1e2030;
+	--color-base-300: #181926;
+	--color-base-content: #cad3f5;
+}

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ThemeToggle from './ThemeToggle.svelte';
+
 	const links = [
 		{ href: '#about', label: 'About' },
 		{ href: '#skills', label: 'Skills' },
@@ -36,7 +38,8 @@
 			{/each}
 		</ul>
 	</div>
-	<div class="navbar-end">
+	<div class="navbar-end gap-2">
+		<ThemeToggle />
 		<a href="#contact" class="btn btn-primary btn-sm">Get in touch</a>
 	</div>
 </div>
